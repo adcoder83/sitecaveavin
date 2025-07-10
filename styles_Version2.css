@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap');
+
+/* Font classes for Tailwind utility */
+.font-playfair {
+    font-family: 'Playfair Display', serif;
+}
+.font-montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+/* Hero background */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://www.bottl.fr/media/cache/cover_medium/uploads/commerces/680945/la-cave-d-alexandra-1.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 80vh;
+}
+
+/* Cards hover overlay */
+.wine-card:hover .wine-overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+.wine-overlay {
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* Animation classes */
+.grape-animation {
+    animation: float 6s ease-in-out infinite;
+}
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+/* FadeInUp animation for cards */
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(40px);}
+    100% { opacity: 1; transform: translateY(0);}
+}
+.animate-fadeInUp {
+    animation: fadeInUp 1s ease forwards;
+}

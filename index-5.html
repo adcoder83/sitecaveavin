@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="La Cave d'Alexandra à Toulon : découvrez nos grands crus, notre cave authentique et nos dégustations.">
+    <title>La Cave d'Alexandra - Découvrez nos grands crus</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50 font-montserrat">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-10">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <span class="text-2xl font-playfair text-red-900 font-bold">La Cave d'Alexandra</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#accueil" class="text-gray-800 hover:text-red-700 px-3 py-2 font-medium">Accueil</a>
+                    <a href="#vins" class="text-gray-800 hover:text-red-700 px-3 py-2 font-medium">Nos Vins</a>
+                    <a href="#cave" class="text-gray-800 hover:text-red-700 px-3 py-2 font-medium">Notre Cave</a>
+                    <a href="#degustation" class="text-gray-800 hover:text-red-700 px-3 py-2 font-medium">Dégustation</a>
+                    <a href="#contact" class="text-gray-800 hover:text-red-700 px-3 py-2 font-medium">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-gray-800 focus:outline-none" aria-label="Ouvrir le menu">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white w-full px-4 pb-4">
+            <a href="#accueil" class="block text-gray-800 hover:text-red-700 py-2">Accueil</a>
+            <a href="#vins" class="block text-gray-800 hover:text-red-700 py-2">Nos Vins</a>
+            <a href="#cave" class="block text-gray-800 hover:text-red-700 py-2">Notre Cave</a>
+            <a href="#degustation" class="block text-gray-800 hover:text-red-700 py-2">Dégustation</a>
+            <a href="#contact" class="block text-gray-800 hover:text-red-700 py-2">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero flex items-center justify-center text-white pt-20">
+        <div class="text-center">
+            <h1 class="text-5xl font-playfair font-bold mb-4">Bienvenue à la Cave d'Alexandra</h1>
+            <p class="text-xl mb-6">Découvrez une sélection unique de vins d'exception à Toulon.</p>
+            <a href="#vins" class="bg-red-900 text-white px-6 py-3 rounded-md shadow hover:bg-red-700 transition">Découvrir nos vins</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="cave" class="max-w-5xl mx-auto py-16 px-4">
+        <div class="flex flex-col md:flex-row items-center gap-8">
+            <img src="https://www.bottl.fr/media/cache/cover_medium/uploads/commerces/680945/la-cave-d-alexandra-1.jpg" alt="Intérieur de la cave à vin à Toulon" class="w-full md:w-1/2 rounded-lg shadow-lg">
+            <div>
+                <h2 class="text-3xl font-playfair font-bold text-red-900 mb-4">Notre Cave</h2>
+                <p class="text-gray-700 text-lg">Notre cave, située au cœur de Toulon, est un véritable écrin pour les amateurs de vins. Venez partager notre passion et découvrir des crus rares sélectionnés avec soin.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wine Collection -->
+    <section id="vins" class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-playfair font-bold text-red-900 mb-10 text-center">Nos Vins</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                <div class="wine-card bg-gray-100 rounded-lg shadow-lg overflow-hidden transition hover:scale-105">
+                    <img src="https://images.vivino.com/thumbs/1K9u9lLDRc2gKQ3Qs5pVhg_pb_x600.png" alt="Bouteille Château Margaux 2015" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl font-playfair mb-2">Château Margaux 2015</h3>
+                        <p class="text-gray-700 mb-4">Un grand cru d'exception, complexe et élégant, parfait pour les grandes occasions.</p>
+                        <button class="bg-red-900 text-white px-4 py-2 rounded hover:bg-red-700 transition" aria-label="Ajouter Château Margaux 2015 au panier"><i class="fas fa-shopping-cart"></i> Ajouter au panier</button>
+                    </div>
+                </div>
+                <div class="wine-card bg-gray-100 rounded-lg shadow-lg overflow-hidden transition hover:scale-105">
+                    <img src="https://images.vivino.com/thumbs/Zp8ygu6qRZ6s6p2KqjJ9Lw_pb_x600.png" alt="Bouteille Château Lafite Rothschild 2016" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl font-playfair mb-2">Château Lafite Rothschild 2016</h3>
+                        <p class="text-gray-700 mb-4">Un vin raffiné, symbole d'excellence et de tradition bordelaise.</p>
+                        <button class="bg-red-900 text-white px-4 py-2 rounded hover:bg-red-700 transition" aria-label="Ajouter Château Lafite Rothschild 2016 au panier"><i class="fas fa-shopping-cart"></i> Ajouter au panier</button>
+                    </div>
+                </div>
+                <div class="wine-card bg-gray-100 rounded-lg shadow-lg overflow-hidden transition hover:scale-105">
+                    <img src="https://images.vivino.com/thumbs/5O5fJ7M3T1yS3A9FfUo4aQ_pb_x600.png" alt="Bouteille Domaine de la Romanée-Conti 2014" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl font-playfair mb-2">Domaine de la Romanée-Conti 2014</h3>
+                        <p class="text-gray-700 mb-4">Un Bourgogne mythique, d'une finesse et d'une longueur exceptionnelles.</p>
+                        <button class="bg-red-900 text-white px-4 py-2 rounded hover:bg-red-700 transition" aria-label="Ajouter Domaine de la Romanée-Conti 2014 au panier"><i class="fas fa-shopping-cart"></i> Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dégustation Section -->
+    <section id="degustation" class="py-16 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-playfair font-bold text-red-900 mb-6">Dégustation</h2>
+            <p class="text-lg text-gray-700 mb-6">Participez à nos ateliers de dégustation et développez votre palais avec des crus soigneusement sélectionnés.</p>
+            <a href="#contact" class="bg-red-900 text-white px-6 py-3 rounded-md shadow hover:bg-red-700 transition">Réserver une dégustation</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="max-w-2xl mx-auto px-4">
+            <h2 class="text-3xl font-playfair font-bold text-red-900 mb-6 text-center">Contact</h2>
+            <form class="space-y-6">
+                <div>
+                    <label for="nom" class="block text-gray-700 font-medium mb-2">Nom</label>
+                    <input type="text" id="nom" name="nom" class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-red-900" required>
+                </div>
+                <div>
+                    <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                    <input type="email" id="email" name="email" class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-red-900" required>
+                </div>
+                <div>
+                    <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                    <textarea id="message" name="message" rows="5" class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-red-900" required></textarea>
+                </div>
+                <button type="submit" class="bg-red-900 text-white px-6 py-2 rounded hover:bg-red-700 transition" aria-label="Envoyer le message">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-red-900 text-white py-6 mt-16">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <p class="mb-4 md:mb-0">&copy; 2025 La Cave d'Alexandra. Tous droits réservés.</p>
+            <div class="flex space-x-4">
+                <a href="#" aria-label="Facebook" class="hover:text-gray-300"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram" class="hover:text-gray-300"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-red-900 text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300" aria-label="Retour en haut">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Custom JS -->
+    <script src="scripts.js"></script>
+</body>
+</html>
